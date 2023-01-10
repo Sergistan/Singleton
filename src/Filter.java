@@ -13,7 +13,7 @@ public class Filter {
         List<Integer> result = new ArrayList<>();
 
         for (int i : source) {
-            if (source.get(i) < treshold) {
+            if (i >= treshold) {
                 logger.log("Элемент " + i + " не проходит");
             } else {
                 logger.log("Элемент " + i + " проходит");
